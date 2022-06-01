@@ -1,0 +1,1 @@
+you can download jenkins as .war file place it directly in tomcart and access it 
