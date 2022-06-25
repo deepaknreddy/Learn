@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo service httpd stop
 sudo yum install git -y
 cd /opt
