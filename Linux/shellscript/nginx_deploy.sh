@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo service nginx stop
 sudo rm -rf /usr/share/nginx/html/*
 cd /opt
