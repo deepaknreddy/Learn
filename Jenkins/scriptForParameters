@@ -1,3 +1,4 @@
+#free style project
 # username is string parameter, branchname is choice parameter, deploy is boolean parameter
 
 echo "	STARTING TO BUILD"
