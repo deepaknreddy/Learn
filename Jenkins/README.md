@@ -1,3 +1,6 @@
+To automate tasks(mostly repetative tasks)
+
+## to remember:
 give sudo permission to jenkins sure
 
 to open/use jenkins user in linux cli # sudo su -s /bin/bash jenkins
