@@ -1,5 +1,7 @@
 To automate tasks(mostly repetative tasks)
+
 To install Jenkins https://github.com/deepaknreddy/Learn/tree/main/Linux/Installation/jenkins
+
 ## to remember:
 give sudo permission to jenkins sure
 
