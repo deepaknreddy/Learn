@@ -38,7 +38,7 @@ Lets start simple,
           
 Like how we have plugins in Jenkins , we have modules in Ansible ,   it is represented by -m command .  
 
-##Commands in Ansible :  
+## Commands in Ansible :  
 In Ansible we can run commands in 3 modes :  
      1. Ad-hoc mode ( with ansible IP -m ... )  
      2. Playbook    ( with ansible-playbook play_book_name )    
