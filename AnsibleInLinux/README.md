@@ -14,7 +14,7 @@ In /etc/ansible/ , by default we have 2 files ( ansible.cfg, hosts ) , and a fol
 When we install ansible we make following changes in ansible.cfg file ,  
      Remove # from the comments and change then,  
        1. sudo_user=     (may be the user which we have on remote server with sudo permission must)  
-       2. host_key_checking= False ( 'T' and 'F' must be capital for True and False )
+       2. host_key_checking= False ( 'T' and 'F' must be capital for True and False )  
        3. remote_user=   (can be same as above)  
        4. private_key_file=                   (the path of private key file [ id_rsa ] ,who's corresponding public key is placed on the remote servers)   
 
