@@ -7,7 +7,7 @@ If asks sudo permissin use -b
 
 2.  file, to create/delete file/directory ,  
     #ansible IP -m file -a "path=enter_path state=directory" -b         (to create directory)  
-  * #ansible IP -m file -a "path=enter_path state=absent" -b            (to delete directory)  
+   *#ansible IP -m file -a "path=enter_path state=absent" -b            (to delete directory)  
     #ansible IP -m file -a "path=enter_path state=touch" -b             (to create a file)  
     #ansible IP -m file -a "path=enter_path state=absent" -b             (to delete a file)  
      eg: #ansible IP -m file -a "path=/opt/deepu.txt state=touch owner=touch group=centos" -b    (you can many things like this ,which will be shown when you create a file)   
