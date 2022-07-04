@@ -29,5 +29,5 @@ here admin is db name
 
 # in /etc/mongod.conf
 net:
-  port: 27017
+  port: 27017   
   bindIp: 0.0.0.0
