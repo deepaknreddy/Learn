@@ -31,3 +31,7 @@ here admin is db name
 net:
   port: 27017   
   bindIp: 0.0.0.0
+
+ # to authenticate aftewr enabling authentication
+ >>db.auth("user_name")
+ (it will ask password)
