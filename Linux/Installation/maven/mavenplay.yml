@@ -1,0 +1,36 @@
+---
+ - name: to install install maven
+   host: localhost
+   become: True
+   gather_facts: True
+   
+   tasks:
+   - name: to install wget
+     yum: name=wget state=latest
+
+   - name: to install java
+     yum: name=java state=latest
+
+   - name: to download packag
+     script: wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz -O /opt/
+
+   - name: to install tar and gunzip
+     yum: name={{item}} state=latest
+     with_items:
+     - tar
+     - gunzip
+
+   - name: to unzip package
+     script: gunzip /opt/apache-maven-3.8.6-bin.tar.gz
+
+   - name: to untar
+     script: tar -xvf /opt/apache-maven-3.8.6-bin.tar
+
+   - name: to remove tar
+     script: rm -rf /opt/apache-maven-3.8.6-bin.tar
+
+   - name: to create softlinks
+     script: ln -s /opt/apache-maven-3.8.6/bin/mvn /usr/bin/mvn
+
+   - name: to check version of maven
+     script: mvn --version
