@@ -1,5 +1,5 @@
 # method1:
-  #sudo yum install epel-release -y
+  #sudo yum install epel-release -y  
   #sudo yum install maven -y
   
 # method2:
