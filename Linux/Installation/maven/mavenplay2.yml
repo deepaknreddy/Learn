@@ -36,4 +36,4 @@
     shell: ln -s /opt/apache-maven-3.8.6/bin/mvn /usr/bin/mvn
 
   - name: to check version of maven
-    shell: mvn --version 
+    shell: mvn --version
