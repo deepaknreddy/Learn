@@ -28,12 +28,12 @@ resource "aws_s3_bucket" "my-bucket-s3" {
     EOF
 }
 resource "aws_s3_object" "my-s3-object" {
-    bucket = "my-terra-deepu-bucker"
+    bucket = aws_s3_bucket.my-bucket-s3.id
     key = "test-1"
     source = "deepu.html"
 }
 resource "aws_s3_object" "my-html-object" {
-    bucket = "my-terra-deepu-bucker"
+    bucket = aws_s3_bucket.my-bucket-s3.id
     key = "index.html"
     source = "index.html"
     content_type = "text/html"
