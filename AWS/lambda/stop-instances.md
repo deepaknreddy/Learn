@@ -7,8 +7,7 @@ def lambda_handler(event, context):
     id=[]  
     for i in instance['Reservations']:    
         for j in i['Instances']:  
-            id.append(j['InstanceId'])  
-        
+            id.append(j['InstanceId'])     
     variable.stop_instances(InstanceIds=id)  
     return {  
       'statusCode': 200,  
