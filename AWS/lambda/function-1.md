@@ -1,3 +1,6 @@
+when we are creating lambda function we give execution role as Create a new role with basic Lambda permissions (Lambda will create an execution role named <myFunctionName>-role-1s2ogcov, with permission to upload logs to Amazon CloudWatch Logs.)
+
+
 import json  #this json not required for this program  
 
 def lambda_handler(event, context):  
@@ -14,7 +17,7 @@ events:
   "weight": 56  
 }  
 
-result of test:  
+## result of test:  
 A function update is still in progress so the invocation went to the previously deployed code and configuration.  
 
 Test Event Name  
