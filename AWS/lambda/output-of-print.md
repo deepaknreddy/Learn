@@ -4,7 +4,6 @@ def lambda_handler(event, context):
     variable=boto3.client('ec2')  
     instance=variable.describe_instances(Filters=[{'Name': 'tag:Name', 'Values': ['INSTANCES-1']}])  
     #instance=variable.describe_instances(Filters=[{'Name': 'instance-type', 'values':['stopped']}])  
-    
     print("output is:",instance)  
     return {  
       'statusCode': 200,  
