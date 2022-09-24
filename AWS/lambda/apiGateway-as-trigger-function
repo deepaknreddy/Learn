@@ -1,0 +1,26 @@
+import json
+
+def lambda_handler(event, context):
+    # TODO implement
+   if event['name']=='deepak':
+       return "hello,iam deepak"
+       
+## add trigger as api-gateway(created a new one here), and HHTP API type and security as open
+now if i trigger (done by opening the endpoint link of the api gateway used),the result is internal error, because if we want outpout then we should use this:
+ return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
+    
+    
+ 
+ import json
+
+def lambda_handler(event, context):
+    # TODO implement
+        return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
+    
+open api gateway endpoint link, you will see :   Hello from Lambda!
