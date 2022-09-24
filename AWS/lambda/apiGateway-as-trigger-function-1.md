@@ -18,9 +18,9 @@ def lambda_handler(event, context):
 
 
 
-### so now to pass input via api-gateway ,we can use postman to give input as get or post ... ,alternatively for the learning purpose i did add this to apigateway endpoint to 
+### so now to pass input via api-gateway ,we can use postman to give input as get or post ... ,alternatively for the learning purpose i did add this to apigateway endpoint 
 ####https://p62oosd04j.execute-api.ap-southeast-1.amazonaws.com/default/api-function?firsts_num=30&sec_num=30
-and modified functions to this,   so we got return as ###900
+and modified functions to this,   so we got return as ### 900
 
 import json
 first_num=0
