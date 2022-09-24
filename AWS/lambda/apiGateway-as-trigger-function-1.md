@@ -13,7 +13,7 @@ def lambda_handler(event, context):
     
     
 ---------------------------------------------------------------------    
-    
+    ------------------------------------------------------------------------------------
     
     
 
@@ -21,7 +21,7 @@ def lambda_handler(event, context):
 
 
 ----------------------------------------------------------------------------
-
+  ------------------------------------------------------------------------------------
 
 
 ### so now to pass input via api-gateway ,we can use postman to give input as get or post ... ,alternatively for the learning purpose i did add this to apigateway endpoint   
