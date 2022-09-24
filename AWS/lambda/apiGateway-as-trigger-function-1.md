@@ -12,7 +12,7 @@ def lambda_handler(event, context):
 ### this will show the input provided to the lambda function
     
     
-    
+---------------------------------------------------------------------    
     
     
     
@@ -20,7 +20,7 @@ def lambda_handler(event, context):
 #### to do the test ,by providing test events choose api-gateway templete,so you can see what type of value/input is provided for the event variable
 
 
-
+----------------------------------------------------------------------------
 
 
 
