@@ -1,6 +1,8 @@
 1.create s3 event in s3 settings ,and sent the event to lambda function which u want  (this is valid for both add and remove,just that u have to create event for put and pull)
 2.back to lambda function,do the following changes  
 
+
+
 from __future__ import print_function  
 import json  
 import boto3  
