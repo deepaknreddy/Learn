@@ -21,7 +21,7 @@ enable 2049 port in security group inbound rules
 
 
 
-###client-side  
+### client-side  
 sudo yum install nfs-utils -y  
  mkdir /newdir  
 mount -t nfs 44.211.39.77:/sharedir /newdir  
