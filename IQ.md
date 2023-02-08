@@ -108,6 +108,7 @@ rules:
           fi
           
 - Delete files older than 10 days using shell script in Unix [duplicate] ??  
+
           find path -mtime +10 -type d | xargs rm -rf 
 - Compress/ZIP older than 20 days logs of Apache ??
 - What is the use of  $? , $* , $0 , $# , $@ , $$ , $! and expline with simple program?
