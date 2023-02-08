@@ -62,16 +62,16 @@ rules:
         find path -type d -name directory_name
 - How to add a line of code in the existing file (No need to effect the existing code in the same file) ??  
   
-     cat >> filename  
-     or  
-     echo "new line" >> filename  
+         cat >> filename  
+          or  
+         echo "new line" >> filename  
 - List out top 5 CPU consuming proesses ??  
 
       top --sort -%cpu | head -5
 - Check a process is running howmuch long ??
   
-    pidof procee_name           (will give process id)  
-    ps -p processid -o etime         (will give time sinse the rpocess is sunning)  
+        pidof procee_name           (will give process id)  
+        ps -p processid -o etime         (will give time sinse the rpocess is sunning)  
     
 - diff b/w $* and $& ??
    
@@ -82,11 +82,11 @@ rules:
         grep -v keyword filename  
 - zip and tar a file ?? unzip a zip/tar file??
   
-    tar -cvf destination.tar source  
-    zip source.tarfile destination  
+        tar -cvf destination.tar source  
+        zip source.tarfile destination  
     
-    unzip source.tar  
-    tar -xvf file.tar  
+        unzip source.tar  
+        tar -xvf file.tar  
 - Find the modified files in specified time ??  
 
           (incomplete) find path -mtime +time_in_days  
