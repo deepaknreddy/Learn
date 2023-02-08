@@ -111,8 +111,25 @@ rules:
 
           find path -mtime +10 -type d | xargs rm -rf 
 - Compress/ZIP older than 20 days logs of Apache ??
+
+          (incomplete) find path -mtime +20 -type f | 
 - What is the use of  $? , $* , $0 , $# , $@ , $$ , $! and expline with simple program?
 
-
+            (incomplete)
 - Write a shell scripting program to print biggest number in given three values. [a=3 , b =9, c=4]
 
+            (not sure if it works)
+            #!/bin/bash
+            a=3
+            b=9
+            c=4
+            i=0
+            for i in a, b, c
+            do 
+              if [[ i> big ]]
+              then
+                  big = i
+              fi
+            done
+
+- 
