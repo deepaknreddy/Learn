@@ -86,4 +86,32 @@ rules:
     cat /proc/cpuifo
 - Check If a Process is Running ?? If not Make it Run otherwise "Print Process is Running" ??
 
-        hi
+        #!/bin/bash
+        service_name= process_name
+        if (( $( ps -ef | grep -v grep | grep $service_name | wc -l) > 0 ))
+        then 
+        echo "$service is running!!!"
+        else
+        /etc/init.d/$service start
+        fi
+        
+        or 
+        
+        	#!/bin/bash
+          ps -ef | grep -v grep | grep nginx
+          if [ $? -eq 1 ]
+          then
+          echo " Httpd is Stopped !! We are starting the service now"
+          sudo service httpd restart
+          else
+          echo "still running"
+          fi
+          
+- Delete files older than 10 days using shell script in Unix [duplicate] ??
+          find path -mtime +10 -type d | xargs rm -rf 
+- Compress/ZIP older than 20 days logs of Apache ??
+- What is the use of  $? , $* , $0 , $# , $@ , $$ , $! and expline with simple program?
+
+
+- Write a shell scripting program to print biggest number in given three values. [a=3 , b =9, c=4]
+
