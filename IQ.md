@@ -54,9 +54,9 @@ rules:
         (wrong) find path -type f -size -2M +5M
 - find files that have a modification time of a day ago ??  
  
-    (no complete) find path -type f -mtime 1  
-    find path -mtime +1 -type f    (find files that are modified more than 1 day)  
-    find path -mtime -1 -type f    (find files that are modified less than a day ago)  
+       (no complete) find path -type f -mtime 1  
+        find path -mtime +1 -type f    (find files that are modified more than 1 day)  
+        find path -mtime -1 -type f    (find files that are modified less than a day ago)  
 - Find a Directory with a specific name ??  
 
         find path -type d -name directory_name
