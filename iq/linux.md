@@ -118,5 +118,5 @@
 
 - Shell Script to get exception from logs for last one hour
 
-	 grep "^$(date -d -1hour +'%Y-%m-%d %H')" test.logs | grep 'exception'  (copy-pasted)  
+	   grep "^$(date -d -1hour +'%Y-%m-%d %H')" test.logs | grep 'exception'  (copy-pasted)  
 remaining in devops/linux/ in learnwithdevops
