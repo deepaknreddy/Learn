@@ -84,3 +84,6 @@ rules:
     awk '{print $2}' filename
 - Find number of CPU cores prasent in Servers ??? //nproc or cat /proc/cpuinfo ??  
     cat /proc/cpuifo
+- Check If a Process is Running ?? If not Make it Run otherwise "Print Process is Running" ??
+
+    hi
