@@ -47,7 +47,9 @@ rules:
 - Find a file with less a than 2mb size && greter than 5mb size??  
     (wrong) find path -type f -size -2M +5M
 - find files that have a modification time of a day ago ??  
-    (no complete) find path -type f -mtime -
+    (no complete) find path -type f -mtime 1  
+    find path -mtime +1 -type f    (find files that are modified more than 1 day)  
+    find path -mtime -1 -type f    (find files that are modified less than a day ago)  
 - Find a Directory with a specific name ??  
     find path -type d -name directory_name
 - How to add a line of code in the existing file (No need to effect the existing code in the same file) ??  
@@ -72,7 +74,7 @@ rules:
     unzip source.tar  
     tar -xvf file.tar  
 - Find the modified files in specified time ??  
-    (incomplete)
+   (incomplete) find path -mtime +time_in_days  
 - Count number lines a file??  
     nl filename      (will print all the line wiuth numbering)  
     wc -l filename    (will print numer of lines)  
