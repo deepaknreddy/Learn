@@ -13,9 +13,10 @@ download latest nexus:
             ls -lh
 
 permissions:
-useradd --system --no-create-home nexus
-chown -R nexus:nexus /opt/nexus
-chown -R nexus:nexus /opt/nexusdata
+
+      useradd --system --no-create-home nexus
+      chown -R nexus:nexus /opt/nexus
+      chown -R nexus:nexus /opt/nexusdata
 
 
 vi /opt/nexus/bin/nexus.vmoptions
