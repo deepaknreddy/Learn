@@ -20,6 +20,7 @@ permissions:
 
 
       vi /opt/nexus/bin/nexus.vmoptions
+
 make following changes:
 
       -Xms2703m
@@ -39,10 +40,12 @@ make following changes:
       -Djava.io.tmpdir=../nexusdata/nexus3/tmp
       -Dkaraf.startLocalConsole=false
 
+add run user:
       vi /opt/nexus/bin/nexus.rc
 
       run_as_user="nexus"
 
+chnge host and port if needed:
 
       vi /opt/nexus/etc/nexus-default.properties
 
@@ -53,12 +56,16 @@ make following changes:
 Configure the open file limit of the nexus user:
 
       vi /etc/security/limits.conf
+      
 add this line,
+
       nexus - nofile 65536
 
 
 Set Nexus as a System Service:
+
       sudo vi /etc/systemd/system/nexus.service
+
 add the below sentences,
 
       [Unit]
