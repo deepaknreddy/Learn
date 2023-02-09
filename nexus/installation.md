@@ -18,6 +18,7 @@ permissions:
       chown -R nexus:nexus /opt/nexus
       chown -R nexus:nexus /opt/nexusdata
 
+replace sonauser with nexusdata in this file:
 
       vi /opt/nexus/bin/nexus.vmoptions
 
@@ -41,6 +42,7 @@ make following changes:
       -Dkaraf.startLocalConsole=false
 
 add run user:
+
       vi /opt/nexus/bin/nexus.rc
 
       run_as_user="nexus"
