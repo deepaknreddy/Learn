@@ -18,7 +18,7 @@ permissions:
       chown -R nexus:nexus /opt/nexus
       chown -R nexus:nexus /opt/nexusdata
 
-replace sonauser with nexusdata in this file:
+replace sona-type with nexusdata in this file:
 
       vi /opt/nexus/bin/nexus.vmoptions
 
