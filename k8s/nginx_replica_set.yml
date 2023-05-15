@@ -19,3 +19,6 @@ spec:
    matchLabels:
      object: pod
  replicas: 4
+
+
+# matchLabels and labels under spec.template.metadata.labels must match
