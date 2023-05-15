@@ -161,3 +161,11 @@ kubectl get nodes
 Ref : https://www.linuxtechi.com/how-to-install-kubernetes-cluster-rhel/
 
 
+11. to creat join token
+```
+kubeadm token create --print-join-command
+```
+to see list of tokens
+```
+kubeadm token list
+```
