@@ -127,11 +127,11 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 
 8. Install Calico Pod Network Add-on
-
+```
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml
 
 kubectl get pods -n kube-system
-
+```
 
 - Check the status of Kubernetes cluster
 
