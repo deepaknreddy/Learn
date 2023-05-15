@@ -16,11 +16,11 @@ kubectl run nginx --image=nginx --restart=Never
 ```
 #### (note: pods created here are not accessible from outside,to access them we have to curl/hit the internal IP of the POD)
 
-### To create pod with nginx.yml file:
+### 2.To create pod with nginx.yml file:
 ```
 kubectl apply -f nginx.yml
 ```
-### TO dry run:
+### 3.TO dry run:
 ```
 kubectl apply -f nginx.yml --dry-run=server
 ```
