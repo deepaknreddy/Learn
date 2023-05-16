@@ -22,9 +22,20 @@ kubectl apply -f nginx.yml
 ```
 ### 3.TO dry run:
 ```
-kubectl apply -f nginx.yml --dry-run=server
+kubectl apply -f nginx.yml --dry-run=client
 ```
 #### This command gives better dryrun output,same as if run on the server:
 ```
  kubectl apply -f nginx.yml --dry-run=server
  ```
+### 4. To delete a pod:
+```
+kubectl delete pod pod_name
+```
+### 5. To see all objects/pods:
+```
+kubectl get all 
+```
+```
+kubectl get pods
+```
