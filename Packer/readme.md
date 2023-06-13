@@ -9,34 +9,37 @@ If we want to make any changes(update/patch the application), we create new imag
 i.e. deploying finalised and complete image everytime.
 
 
-when packer runs there is going to be 3 stages:
+when packer runs there is going to be 3 stages:  
 1.Builder stage  
 - responsible creating the image(most important)
 - for every plotform there is different builder
 - here we specify base ami i.e. source image
-- builder takes the base image and deploys an instance
+- builder takes the base image and deploys an instance  
 2.Provisioner stage  
 - this step is to configure and modify the instance
 - set of instructions ae provided to customise the image(like shell script to install and start nginx,deploy application, goit clone etc)
 
-after this stage a snapshot of the ami is taken to create a new ami.
+after this stage a snapshot of the ami is taken to create a new ami.  
 
-3.post-processors stage
+3.post-processors stage  
 - post-processors are run after builders and provisioners and can be used to upload artifacts,compress and repackage files/images.
 
 PACKER CAN DO ALL OF THIS BY USING 1 SINGLE CONFIG FILE AND WITH A SINGLE COMMAND.
-
+```
 packer files should have '.pkr.hcl' extension, eg: aws-ubuntu.pkr.hcl
+```
 
-
-packer documentation: https://developer.hashicorp.com/packer/docs   https://developer.hashicorp.com/packer/plugins
-
+packer documentation:
+```
+https://developer.hashicorp.com/packer/docs
+https://developer.hashicorp.com/packer/plugins
+```
 there choose amazon ec2(you will have builders, data source and post-processor)
 
 packer file:
-
+```
 vi aws-linux.pkr.hcl
-
+```
 #this provider block can be found under builders>overview in documentation
 ```
 packer {
@@ -79,11 +82,17 @@ post-processor "compress" {}
 #compress takes the output of vagrant and compress it to .tar.zip
 ```
 packer commands:
-packer init .   // dot represents present directory, this command downloads plugins
+```
+packer init .
+// dot represents present directory, this command downloads plugins
 
-packer fmt .    //formats the content of files same like terraform fmt,it aligns the spaces and brackets
+packer fmt .
+//formats the content of files same like terraform fmt,it aligns the spaces and brackets
 
-packer validate .   //like syntax check
+packer validate .
+//like syntax check
 
 packer build filename
-eg: packer build aws-ubuntu.pkr.hcl  // this command will spinup and ec2 instances with temporary keys, then execute the cammands and build new image from it and then terminate that instance.
+eg: packer build aws-ubuntu.pkr.hcl  
+// this command will spinup and ec2 instances with temporary keys, then execute the cammands and build new image from it and then terminate that instance.
+```
