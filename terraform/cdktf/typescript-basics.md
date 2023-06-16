@@ -46,37 +46,39 @@ Example:
     The function body is enclosed within curly braces {}.
             
     Example:
-``
+```
 function addNumbers(a: number, b: number): number {
     return a + b;
 }
-
-            In the example, addNumbers is a function that takes two parameters (a and b) of type number and returns a value of type number.
+```
+In the example, addNumbers is a function that takes two parameters (a and b) of type number and returns a value of type number.
         
 ### Function Parameters:
-            Parameters are the variables declared within the function's parentheses ().
-            Parameters specify the data type of the values that the function expects to receive when it is called.
+    Parameters are the variables declared within the function's parentheses ().
+    Parameters specify the data type of the values that the function expects to receive when it is called.
 
 ### Return Type:
-            The return type of a function specifies the data type of the value that the function will return.
-            It is declared after the parameter list with a colon :, followed by the desired return type.
+    The return type of a function specifies the data type of the value that the function will return.
+    It is declared after the parameter list with a colon :, followed by the desired return type.
 ### Function Invocation:
-            Functions are invoked by using the function name followed by parentheses ().
-            If the function has parameters, their values can be passed within the parentheses.
-            Example:
+    Functions are invoked by using the function name followed by parentheses ().
+    If the function has parameters, their values can be passed within the parentheses.
+Example:
+```
 const result = addNumbers(3, 4);
-
-      Optional and Default Parameters:
-           Function parameters can be made optional by appending a question mark '?' after the parameter name.
-           Default parameter values can be assigned using the assignment operator '='.
-           example:
-   default paarameters:
+```
+### Optional and Default Parameters:
+    Function parameters can be made optional by appending a question mark '?' after the parameter name.
+    Default parameter values can be assigned using the assignment operator '='.
+example:
+#### default paarameters:
+```
 function greet(name: string = 'Anonymous'): void {
   console.log(`Hello,', ${name}!);
 }
-
-    optional parameters:
-   
+```
+#### optional parameters:
+```   
 function greet(name?: string): void {
   if (name) {
     console.log(`Hello, ${name}!`);
@@ -87,30 +89,58 @@ function greet(name?: string): void {
 
 greet(); // Output: Hello!
 greet('John'); // Output: Hello, John!
-
-4. classes:
+```
+# 4.classes:
      Classes provide a way to define blueprints for creating objects with properties and methods.
-      They can have constructors, properties, and methods.
-      Inheritance and access modifiers (public, private, protected) are supported.
+     They can have constructors, properties, and methods.
+     Inheritance and access modifiers (public, private, protected) are supported.
    
-     Class Declaration:
-       Classes are declared using the class keyword followed by the class name.
-       The class name should be in PascalCase (capitalized first letter).
+### Class Declaration:
+    Classes are declared using the class keyword followed by the class name.
+    The class name should be in PascalCase (capitalized first letter).
 Example:
+```
 class Person {
   // class members (properties and methods) go here
 }
-
-    Properties:
-       Properties are variables defined within a class.
-       They store data specific to each instance of the class (objects).
-   Example:
+```
+### Properties:
+    Properties are variables defined within a class.
+    They store data specific to each instance of the class (objects).
+Example:
+```
 class Person {
   name: string;
   age: number;
 }
+```
+In the example, 'name' and 'age' are properties of the 'Person' class. Each object created from this class will have its own 'name' and 'age' properties.
 
-    In the example, 'name' and 'age' are properties of the 'Person' class. Each object created from this class will have its own 'name' and 'age' properties.
+### Constructor:
+The constructor is a special method that is automatically called when an object is created from the class.
+It is defined using the constructor keyword followed by parentheses ().
+It is used to initialize the object's properties and perform any setup tasks.
+It does not have a return type, not even void.
+example:
+```
+class Person {
+  name: string;
+  age: number;
 
-     Constructor:
-   
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+```
+In the example, the Person class has a constructor that takes name and age parameters. When a Person object is created, the constructor is called and the provided values are used to initialize the object's properties.
+#### constructor invocation:
+```
+const person = new Person('John', 25);
+```
+In the example, the 'Person' object named 'person' is created by invoking the constructor with the arguments 'John' and 25. The constructor is executed, and the object is initialized with the provided values.
+
+### Methods:
+Methods are functions defined within a class.
+They perform actions or provide functionality related to the class.
+Example:
