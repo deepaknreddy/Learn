@@ -39,29 +39,28 @@ Example:
     let isDone: boolean = false;  
     let numbers: number[] = [1, 2, 3];  
 ```
-3. Functions:
-      Function Declaration:
-            Functions are declared using the function keyword followed by the function name.
-
-            The function name is followed by parentheses () which can optionally contain parameters.
+# 3. Functions:
+### Function Declaration:
+    Functions are declared using the function keyword followed by the function name.
+    The function name is followed by parentheses () which can optionally contain parameters.
+    The function body is enclosed within curly braces {}.
             
-            The function body is enclosed within curly braces {}.
-            
-            Example:
-                          function addNumbers(a: number, b: number): number {
-                            return a + b;
-                          }
+    Example:
+``
+function addNumbers(a: number, b: number): number {
+    return a + b;
+}
 
             In the example, addNumbers is a function that takes two parameters (a and b) of type number and returns a value of type number.
         
-      Function Parameters:
+### Function Parameters:
             Parameters are the variables declared within the function's parentheses ().
             Parameters specify the data type of the values that the function expects to receive when it is called.
 
-      Return Type:
+### Return Type:
             The return type of a function specifies the data type of the value that the function will return.
             It is declared after the parameter list with a colon :, followed by the desired return type.
-      Function Invocation:
+### Function Invocation:
             Functions are invoked by using the function name followed by parentheses ().
             If the function has parameters, their values can be passed within the parentheses.
             Example:
