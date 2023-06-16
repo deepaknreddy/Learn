@@ -33,11 +33,12 @@ It is generally recommended to use const whenever possible to make variables imm
 TypeScript has several built-in data types, including number, string, boolean, object, array, and more.
 Type annotations can be used to specify the data type of variables, function parameters, and return values.
 Example:
-    let quantity: number = 10;
-    let message: string = 'Hello, TypeScript!';
-    let isDone: boolean = false;
-    let numbers: number[] = [1, 2, 3];
-
+```
+    let quantity: number = 10;  
+    let message: string = 'Hello, TypeScript!';  
+    let isDone: boolean = false;  
+    let numbers: number[] = [1, 2, 3];  
+```
 3. Functions:
       Function Declaration:
             Functions are declared using the function keyword followed by the function name.
