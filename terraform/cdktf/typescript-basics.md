@@ -7,7 +7,7 @@ let name: string = 'John';
 const age: number = 25;
 ```
 
-### let keyword:
+#### let keyword:
 Variables declared with let are mutable, meaning their values can be reassigned.  
 let variables have block scope, which means they are only accessible within the block where they are defined.  
 You can declare a let variable without assigning an initial value, and assign a value later.  
@@ -16,7 +16,7 @@ Example:
 let name: string;
 name = 'John'; // Value can be assigned/reassigned
 ```
-### const keyword:
+#### const keyword:
 
 Variables declared with const are immutable, meaning their values cannot be reassigned once they are initialized.
 const variables also have block scope like let.
