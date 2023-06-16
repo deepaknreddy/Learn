@@ -1,32 +1,35 @@
-1.Variables:
-Variables are declared using the let or const keyword.
-TypeScript supports type annotations to specify the data type of a variable.
+# 1.Variables:  
+Variables are declared using the let or const keyword.  
+TypeScript supports type annotations to specify the data type of a variable.  
 Example:
+```
 let name: string = 'John';
 const age: number = 25;
+```
 
+### let keyword:
+Variables declared with let are mutable, meaning their values can be reassigned.  
+let variables have block scope, which means they are only accessible within the block where they are defined.  
+You can declare a let variable without assigning an initial value, and assign a value later.  
+Example:
+```
+let name: string;
+name = 'John'; // Value can be assigned/reassigned
+```
+### const keyword:
 
-    let keyword:
-      Variables declared with let are mutable, meaning their values can be reassigned.
-      let variables have block scope, which means they are only accessible within the block where they are defined.
-      You can declare a let variable without assigning an initial value, and assign a value later.
-      Example:
-          let name: string;
-          name = 'John'; // Value can be assigned/reassigned
-
-    const keyword:
-
-      Variables declared with const are immutable, meaning their values cannot be reassigned once they are initialized.
-      const variables also have block scope like let.
-      const variables must be assigned an initial value during declaration, and you cannot assign a new value to them later.
-      Example:
-          const age: number = 25;
-          // age = 30; // Error: Cannot assign to 'age' because it is a constant
-
+Variables declared with const are immutable, meaning their values cannot be reassigned once they are initialized.
+const variables also have block scope like let.
+const variables must be assigned an initial value during declaration, and you cannot assign a new value to them later.
+Example:
+```
+const age: number = 25;
+// age = 30; // Error: Cannot assign to 'age' because it is a constant
+```
 It is generally recommended to use const whenever possible to make variables immutable, as it provides clearer code and prevents accidental reassignment. Use let when you need a variable that can be reassigned.
 
 
-2.Data Types:
+# 2.Data Types:
 TypeScript has several built-in data types, including number, string, boolean, object, array, and more.
 Type annotations can be used to specify the data type of variables, function parameters, and return values.
 Example:
