@@ -94,6 +94,7 @@ greet('John'); // Output: Hello, John!
      Classes provide a way to define blueprints for creating objects with properties and methods.
      They can have constructors, properties, and methods.
      Inheritance and access modifiers (public, private, protected) are supported.
+     Classes allow you to create reusable and structured code
    
 ### Class Declaration:
     Classes are declared using the class keyword followed by the class name.
@@ -144,3 +145,85 @@ In the example, the 'Person' object named 'person' is created by invoking the co
 Methods are functions defined within a class.
 They perform actions or provide functionality related to the class.
 Example:
+```
+class Person {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+
+  sayHello(): void {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+}
+```
+```
+let person = new Person('deepak',25);
+person.sayHello();
+```
+```
+output:
+Hello, my name is deepak.
+```
+
+### Access Modifiers:
+TypeScript provides access modifiers (public, private, and protected) to control the visibility and accessibility of class members (properties and methods).
+
+public is the default access modifier if not specified explicitly.
+
+Example:
+```
+class Person {
+  public name: string;
+  private age: number;
+  protected email: string;
+
+  // ...
+}
+```
+In the example, name is a public property accessible from anywhere, age is a private property accessible only within the class itself, and email is a protected property accessible within the class and its subclasses.
+
+# interfaces:
+Interfaces define the structure of an object and can be used to enforce type checking.
+They specify the names and types of properties and can also include optional and readonly properties.
+example:
+```
+interface Shape {
+  name: string;
+  area(): number;
+}
+
+class Circle implements Shape {
+  name: string;
+  radius: number;
+
+  constructor(radius: number) {
+    this.name = 'Circle';
+    this.radius = radius;
+  }
+
+  area(): number {
+    return Math.PI * this.radius ** 2;
+  }
+}
+
+const circle = new Circle(5);
+console.log(circle.area());
+```
+
+# modules:
+Modules are used to organize and encapsulate code into separate files or modules.
+TypeScript supports the import and export keywords to import and export modules.
+Example:
+```
+// myModule.ts
+export const greeting = 'Hello, TypeScript!';
+```
+```
+// main.ts
+import { greeting } from './myModule';
+console.log(greeting);
+```
