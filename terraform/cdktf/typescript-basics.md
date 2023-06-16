@@ -1,7 +1,7 @@
 # 1.Variables:  
-Variables are declared using the let or const keyword.  
-TypeScript supports type annotations to specify the data type of a variable.  
-Example:
+    Variables are declared using the let or const keyword.  
+    TypeScript supports type annotations to specify the data type of a variable.  
+    Example:
 ```
 let name: string = 'John';
 const age: number = 25;
