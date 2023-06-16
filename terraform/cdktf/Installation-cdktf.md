@@ -5,7 +5,7 @@
 
    #terraform --version  
    
- yum install wget unzip tar git -y  
+   yum install wget unzip tar git -y  
 2. Install node  
    dnf module install nodejs  
    npm --version  
@@ -13,11 +13,3 @@
 3.npm install --global cdktf-cli@latest  
 
 #cdktf help  
-
-
-
-
-
-
-
-   
