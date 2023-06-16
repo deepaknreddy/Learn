@@ -1,4 +1,4 @@
-# 1.Variables:  
+# 1.Variables:
     Variables are declared using the let or const keyword.  
     TypeScript supports type annotations to specify the data type of a variable.  
     Example:
