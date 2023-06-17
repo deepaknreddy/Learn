@@ -2,3 +2,5 @@ For example, in the code snippet new Vpc(this, 'vpc', { ... }), Vpc is a constru
 construct can also represent a set of resources.
 
 To summarize, constructs in CDK for Terraform represent cloud resources or abstractions, while constructors in TypeScript are special methods used to initialize objects of a class.
+
+Terraform modules are limited in the sense that they can generate resources based on HCL configuration, but constructs are not constrained to just creating, and can also modify, enrich, and validate resources created outside of the construct.
