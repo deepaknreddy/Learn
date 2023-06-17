@@ -1,4 +1,4 @@
-### * istall cdktf from cdktf-installation.md
+### * install cdktf from cdktf-installation.md
 1. CDKTF synthesizes infrastructure that you define in a supported programming language into JSON configuration files that Terraform can use to manage infrastructure.
 2.The following diagram shows how synthesizing a CDKTF application produces a series of artifacts in a designated output folder. You can then either use the JSON file with Terraform directly or provision your infrastructure using CDKTF CLI commands. 
 ![image](https://github.com/deepaknreddy/Learn/assets/104769185/392635fb-1b85-49a4-aebc-6d00c93c9e64)
@@ -22,4 +22,5 @@ A Stack represents a collection of infrastructure resources that CDKTF synthesiz
 Stacks allow you to separate the state management within an application. For example, you may want to deploy and manage separate infrastructure resources for development and testing. Reference the stack documentation for more details on when and how to use stacks in your project.
 stack documentation: https://developer.hashicorp.com/terraform/cdktf/concepts/stacks
 
-### 
+### resource class:
+A Resource represents the definition for one or more infrastructure objects. Resources and their required attributes vary depending on the provider. Reference the resources documentation for more details.
