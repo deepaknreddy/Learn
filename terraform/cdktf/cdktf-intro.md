@@ -24,3 +24,6 @@ stack documentation: https://developer.hashicorp.com/terraform/cdktf/concepts/st
 
 ### resource class:
 A Resource represents the definition for one or more infrastructure objects. Resources and their required attributes vary depending on the provider. Reference the resources documentation for more details.
+
+### construct:
+Rather than defining resources by hand, you can leverage constructs to reuse existing resource configurations written in your programming language. For example, you might create a construct that describes a Kubernetes deployment, import it into your application, and customize the deployment via the exposed properties.
