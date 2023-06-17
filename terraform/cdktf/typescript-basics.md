@@ -186,7 +186,7 @@ class Person {
 ```
 In the example, name is a public property accessible from anywhere, age is a private property accessible only within the class itself, and email is a protected property accessible within the class and its subclasses.
 
-# interfaces:
+# 5.interfaces:
 Interfaces define the structure of an object and can be used to enforce type checking.
 They specify the names and types of properties and can also include optional and readonly properties.
 example:
@@ -214,7 +214,7 @@ const circle = new Circle(5);
 console.log(circle.area());
 ```
 
-# modules:
+# 6.modules:
 Modules are used to organize and encapsulate code into separate files or modules.
 TypeScript supports the import and export keywords to import and export modules.
 Example:
