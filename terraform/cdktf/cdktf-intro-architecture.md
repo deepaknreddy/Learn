@@ -1,3 +1,5 @@
+(to use modules written in typescript and provision infra using module block with HCL : https://developer.hashicorp.com/terraform/cdktf/concepts/hcl-interoperability )
+
 ### * install cdktf from cdktf-installation.md
 1. CDKTF synthesizes infrastructure that you define in a supported programming language into JSON configuration files that Terraform can use to manage infrastructure.
 2.The following diagram shows how synthesizing a CDKTF application produces a series of artifacts in a designated output folder. You can then either use the JSON file with Terraform directly or provision your infrastructure using CDKTF CLI commands. 
