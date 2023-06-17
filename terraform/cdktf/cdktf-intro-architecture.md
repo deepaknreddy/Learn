@@ -9,6 +9,8 @@ Lib: This is the cdktf package that is the foundation for each CDKTF project. It
 CLI: The cdktf CLI allows you to initialize a new CDKTF project, adjust project settings, synthesize your infrastructure into Terraform configuration files, deploy your CDKTF application, and more. Refer to the CLI commands documentation for more details. You can also use some Terraform CLI commands like terraform apply and terraform destroy directly, but we recommend using the available cdktf cli commands where possible.
 4.cdktf cli commandline documentation: https://developer.hashicorp.com/terraform/cdktf/cli-reference/commands
 
+**the architecture is just outline level, for more refer terraform website**
+
 # Application Architecture:
 CDKTF applications are structured as a tree of constructs, which the AWS documentation defines as "classes that define a 'piece of system state'". The foundational classes to build a CDKTF application are App, Stack, and Resource.
 ![image](https://github.com/deepaknreddy/Learn/assets/104769185/f42252f1-82c6-4e80-ace3-ff1b52e3cb36)
