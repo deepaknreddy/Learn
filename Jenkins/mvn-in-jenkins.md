@@ -20,8 +20,8 @@ save it.
 
 4. all the tools installed via global tool configuration, are downloaded and stored in ```/var/lib/jenkins/tools/ ``` 
 
-5. jenkins secrets are stored under /var/lib/jenkins/secrets/  
-   initial password is stored in /var/lib/jenkins/secrets/initialAdminPassword
+5. jenkins secrets are stored under ```/var/lib/jenkins/secrets/ ``` 
+   initial password is stored in ```/var/lib/jenkins/secrets/initialAdminPassword```
 
 6. plugins are stored in /var/lib/jenkins/plugins/
 
