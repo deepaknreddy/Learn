@@ -23,9 +23,11 @@ save it.
 5. jenkins secrets are stored under ```/var/lib/jenkins/secrets/ ``` 
    initial password is stored in ```/var/lib/jenkins/secrets/initialAdminPassword```
 
-6. plugins are stored in /var/lib/jenkins/plugins/
+6. plugins are stored in ```/var/lib/jenkins/plugins/```
 
 7. to configure nexus to the same freetyle job:
-   go to /var/lib/jenkins/tools/hudson.tasks.MavenInstallation/ there open the selected maven version for the project, under <servers> block in settings.xml
-
-8.
+   go to ```/var/lib/jenkins/tools/hudson.tasks.MavenInstallation/``` there open the ``selected maven version for the project```, under <servers> block in ```settings.xml```
+        now configure the goal for invoke top-level maven in the job to,
+           ```
+   clean package sonar:sonar deploy
+   ``` 
