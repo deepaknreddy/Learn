@@ -18,8 +18,14 @@ clean package sonar:sonar
 ```
 save it.
 
-4. all the tools installed via global tool configuration, are downloaded and stored in /var/lib/jenkins/tools/
-5. jenkins secrets are stored under /var/lib/jenkins/secrets/
+4. all the tools installed via global tool configuration, are downloaded and stored in ```/var/lib/jenkins/tools/ ``` 
+
+5. jenkins secrets are stored under /var/lib/jenkins/secrets/  
    initial password is stored in /var/lib/jenkins/secrets/initialAdminPassword
+
 6. plugins are stored in /var/lib/jenkins/plugins/
-7. 
+
+7. to configure nexus to the same freetyle job:
+   go to /var/lib/jenkins/tools/hudson.tasks.MavenInstallation/ there open the selected maven version for the project, under <servers> block in settings.xml
+
+8.
